@@ -93,6 +93,7 @@
 	
 	<!-- CSS: screen, mobile & print are all in the same file -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/lana.css">
 	
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script>
@@ -112,5 +113,9 @@
 		<header id="header">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 			<div class="description"><?php bloginfo('description'); ?></div>
+			<div id="headerbar">			
+           			<?php if ( !dynamic_sidebar('Headerbar') ) : ?>
+			    <?php endif; ?>
+			</div>
 		</header>
 

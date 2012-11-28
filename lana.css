@@ -1,0 +1,15 @@
+#headerbar a {
+    float: left;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+#headerbar li {
+    list-style:none;
+}
+
+#headerbar {
+    float: left;
+    padding-bottom: 40px;
+    width: 100%;
+}

@@ -40,6 +40,13 @@
     		'before_title'  => '<h2>',
     		'after_title'   => '</h2>'
     	));
+
+	    register_sidebar(array('name'=>'Headerbar',
+		'before_widget' => '<li>',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	    ));
     }
     
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
